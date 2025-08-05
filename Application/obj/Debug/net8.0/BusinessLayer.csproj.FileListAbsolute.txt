@@ -1,0 +1,16 @@
+D:\Elnaz\Projects\BookTableReservation\BusinessLayer\obj\Debug\net8.0\BusinessLayer.csproj.AssemblyReference.cache
+D:\Elnaz\Projects\BookTableReservation\BusinessLayer\obj\Debug\net8.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Elnaz\Projects\BookTableReservation\BusinessLayer\obj\Debug\net8.0\BusinessLayer.AssemblyInfoInputs.cache
+D:\Elnaz\Projects\BookTableReservation\BusinessLayer\obj\Debug\net8.0\BusinessLayer.AssemblyInfo.cs
+D:\Elnaz\Projects\BookTableReservation\BusinessLayer\obj\Debug\net8.0\BusinessLayer.csproj.CoreCompileInputs.cache
+D:\Elnaz\Projects\BookTableReservation\BusinessLayer\obj\Debug\net8.0\BusinessLayer.sourcelink.json
+D:\Elnaz\Projects\BookTableReservation\BusinessLayer\bin\Debug\net8.0\BusinessLayer.deps.json
+D:\Elnaz\Projects\BookTableReservation\BusinessLayer\bin\Debug\net8.0\BusinessLayer.dll
+D:\Elnaz\Projects\BookTableReservation\BusinessLayer\bin\Debug\net8.0\BusinessLayer.pdb
+D:\Elnaz\Projects\BookTableReservation\BusinessLayer\bin\Debug\net8.0\Domain.dll
+D:\Elnaz\Projects\BookTableReservation\BusinessLayer\bin\Debug\net8.0\Domain.pdb
+D:\Elnaz\Projects\BookTableReservation\BusinessLayer\obj\Debug\net8.0\Business.EA331CBA.Up2Date
+D:\Elnaz\Projects\BookTableReservation\BusinessLayer\obj\Debug\net8.0\BusinessLayer.dll
+D:\Elnaz\Projects\BookTableReservation\BusinessLayer\obj\Debug\net8.0\refint\BusinessLayer.dll
+D:\Elnaz\Projects\BookTableReservation\BusinessLayer\obj\Debug\net8.0\BusinessLayer.pdb
+D:\Elnaz\Projects\BookTableReservation\BusinessLayer\obj\Debug\net8.0\ref\BusinessLayer.dll
