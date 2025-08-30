@@ -1,0 +1,18 @@
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.log
+
+# Rider/IntelliJ IDEA
+.idea/
+
+# DotNet
+*.dll
+*.exe
+*.pdb
+
+# GitHub Copilot / IntelliCode cache
+CopilotIndices/
