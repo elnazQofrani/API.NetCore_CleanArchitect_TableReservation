@@ -164,6 +164,7 @@ D:\Elnaz\Projects\BookTableReservation\BookTableReservation\obj\Debug\net8.0\Boo
 D:\Elnaz\Projects\BookTableReservation\BookTableReservation\obj\Debug\net8.0\BookTableReservation.csproj.CoreCompileInputs.cache
 D:\Elnaz\Projects\BookTableReservation\BookTableReservation\obj\Debug\net8.0\BookTableReservation.MvcApplicationPartsAssemblyInfo.cs
 D:\Elnaz\Projects\BookTableReservation\BookTableReservation\obj\Debug\net8.0\BookTableReservation.MvcApplicationPartsAssemblyInfo.cache
+D:\Elnaz\Projects\BookTableReservation\BookTableReservation\obj\Debug\net8.0\BookTableReservation.sourcelink.json
 D:\Elnaz\Projects\BookTableReservation\BookTableReservation\obj\Debug\net8.0\scopedcss\bundle\BookTableReservation.styles.css
 D:\Elnaz\Projects\BookTableReservation\BookTableReservation\obj\Debug\net8.0\staticwebassets.build.json
 D:\Elnaz\Projects\BookTableReservation\BookTableReservation\obj\Debug\net8.0\staticwebassets.development.json

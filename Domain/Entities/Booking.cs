@@ -6,7 +6,8 @@ namespace Domain.Entities
 {
     public class Booking
     {
-        [Key]
+         [Key]
+         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
   

@@ -13,9 +13,8 @@ namespace BookTableReservation.Controllers
         private readonly ICustomerService customerService;
         private readonly ITokenHandler tokenHandler;
 
-        public AuthController(ICustomerService customerService , ITokenHandler tokenHandler)
+        public AuthController(ICustomerService customerService, ITokenHandler tokenHandler)
         {
-
             this.customerService = customerService;
             this.tokenHandler = tokenHandler;
         }
@@ -24,12 +23,12 @@ namespace BookTableReservation.Controllers
         public async Task<IActionResult> Login(string username, string passeord)
         {
 
-          var user =  await  customerService.GetCustomerByNamePassword(username ,passeord);
+            var user = await customerService.GetCustomerByNamePassword(username, passeord);
 
             if (user != null)
             {
                 //generate jwt
-            var token =    tokenHandler.CreateToken(user);
+                var token = await tokenHandler.CreateToken(user);
                 return Ok(token);
 
             }

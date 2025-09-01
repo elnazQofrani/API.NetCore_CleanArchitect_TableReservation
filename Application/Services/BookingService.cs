@@ -22,14 +22,13 @@ namespace Application.Services
       
         IBookingRepository bookingRepository;
         public BookingService( IBookingRepository _bookingRepository, IMapper _mapper)
-        {
-    
+        {   
           
             bookingRepository = _bookingRepository;
             mapper = _mapper;
         }
 
-        public async Task<Booking> Creat(Booking booking)
+        public async Task<Booking> Create(Booking booking)
         {
                     
                 await bookingRepository.Create(booking);

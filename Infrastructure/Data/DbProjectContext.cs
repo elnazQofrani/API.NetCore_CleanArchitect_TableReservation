@@ -12,10 +12,10 @@ namespace Infrastructure.Data
         {
 
         }
+
         public DbSet<Customer> Customer { get; set; }
         public DbSet<Seat> Seat { get; set; }
         public DbSet<Booking> Booking { get; set; }
- 
 
     }
 

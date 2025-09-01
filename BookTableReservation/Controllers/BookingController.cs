@@ -15,7 +15,7 @@ using System.Runtime.InteropServices.Marshalling;
 
 namespace BookTableReservation.Controllers
 {
-    // [Authorize]
+    [Authorize (Roles ="Admin")]
     [Route("api/[controller]")]
     [ApiController]
     public class BookingController : ControllerBase
@@ -52,7 +52,7 @@ namespace BookTableReservation.Controllers
 
             var booking = mapper.Map<Booking>(bookingDto);
             booking.Status = BookingStatus.Confirmed;
-            var result = _bookingService.Creat(booking);
+            var result = await _bookingService.Create(booking);
             return Ok(new { Message = "Seat booked successfully", BookingId = result.Id });
         }
 

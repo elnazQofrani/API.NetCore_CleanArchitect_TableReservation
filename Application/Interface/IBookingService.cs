@@ -11,7 +11,7 @@ namespace Application.Interface
 {
     public interface IBookingService
     {
-        Task<Booking> Creat(Booking booking);
+        Task<Booking> Create(Booking booking);
         Task<Booking?> GetById(int id);
         Task<bool> Update(BookingDto booking , int id );
         Task<OperationResult> Update(int id);
