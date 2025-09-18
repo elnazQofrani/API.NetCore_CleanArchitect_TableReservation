@@ -6,6 +6,7 @@ using Application.DTOs;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Application.Interface;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace BookTableReservation.Controllers
 {
@@ -24,6 +25,9 @@ namespace BookTableReservation.Controllers
 
         [HttpPost]
         [ValidateModel]
+        [SwaggerOperation("Create Customer")]
+        [SwaggerResponse(201, "Customer created", typeof(BookingDto))]
+        [SwaggerResponse(400, "Invalid request")]
         public async Task<IActionResult> Create([FromBody] CustomerAddDto customerDto)
         {
             var customerList = mapper.Map<Customer>(customerDto);

@@ -1,6 +1,7 @@
 ﻿using Application.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 
 
 
@@ -20,6 +21,7 @@ namespace BookTableReservation.Controllers
         }
 
         [HttpPost]
+        [SwaggerOperation("Login")]
         public async Task<IActionResult> Login(string username, string passeord)
         {
 

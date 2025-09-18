@@ -11,6 +11,7 @@ using System.ComponentModel.DataAnnotations;
 using Application.Interface;
 using Application.Services;
 using System.Runtime.InteropServices.Marshalling;
+using Swashbuckle.AspNetCore.Annotations;
 
 
 namespace BookTableReservation.Controllers
@@ -35,6 +36,9 @@ namespace BookTableReservation.Controllers
 
         [HttpPost]
         [ValidateModel]
+  [SwaggerOperation("Create Booking")]
+        [SwaggerResponse(201, "Book created", typeof(BookingDto))]
+        [SwaggerResponse(400, "Invalid request")]
         public async Task<IActionResult> Create([FromBody] BookingDto bookingDto)
         {
 
@@ -58,6 +62,10 @@ namespace BookTableReservation.Controllers
 
         [HttpGet]
         [Route("{id:int}")]
+        [SwaggerOperation("Get Booking Details by ID")]
+        [SwaggerResponse(400, "Invalid request")]
+        [SwaggerResponse(404, "Booking not found")]
+        [SwaggerResponse(200, "Booking Id Found ", typeof(BookingDto))]
         public async Task<IActionResult> GetBookingById([FromRoute] int id)
         {
             var booking = await _bookingService.GetById(id);
@@ -73,7 +81,10 @@ namespace BookTableReservation.Controllers
 
         [HttpPut]
         [Route("{id:int}")]
-
+        [SwaggerOperation("Update Booking Details")]
+        [SwaggerResponse(200, "Booking updated successfully", typeof(BookingDto))]
+        [SwaggerResponse(404, "Booking not found")]
+      
         public async Task<IActionResult> UpdateBooking(int id, [FromBody] BookingDto bookingDto)
         {
             if (bookingDto == null)
@@ -92,6 +103,11 @@ namespace BookTableReservation.Controllers
 
         [HttpPatch]
         [Route("{id:int}")]
+        [SwaggerOperation("Cancel Booking")]
+        [SwaggerResponse(200, "Booking Canceled successfully", typeof(BookingDto))]
+        [SwaggerResponse(400, "Invalid request")]
+        [SwaggerResponse(404, "Booking not found")]
+
         public async Task<IActionResult> CancelBooking([FromRoute] int id)
         {
 

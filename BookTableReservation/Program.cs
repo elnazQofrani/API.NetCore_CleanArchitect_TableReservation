@@ -14,7 +14,6 @@ using BookTableReservation.validation;
 using Application.DTOs;
 
 
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -24,6 +23,16 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
+  options.EnableAnnotations();
+
+    options.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Version = "v1",
+        Title = "Restaurant Table Booking API",
+        Description = " Restaurant Table Booking API"
+    });
+
+
     // Add JWT Authentication
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
@@ -49,6 +58,8 @@ builder.Services.AddSwaggerGen(options =>
             Array.Empty<string>()
         }
     });
+
+
 });
 
 
